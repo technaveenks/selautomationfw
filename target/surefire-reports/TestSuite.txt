@@ -1,8 +1,0 @@
--------------------------------------------------------------------------------
-Test set: TestSuite
--------------------------------------------------------------------------------
-Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 13.323 s <<< FAILURE! - in TestSuite
-verifySearchOfItems(com.murali.learnings.automation.selautomationfw.tests.SmokeTest)  Time elapsed: 0.019 s  <<< FAILURE!
-java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because the return value of "com.murali.learnings.automation.selautomationfw.tests.SmokeTest.getDriver()" is null
-	at com.murali.learnings.automation.selautomationfw.tests.SmokeTest.verifySearchOfItems(SmokeTest.java:17)
-

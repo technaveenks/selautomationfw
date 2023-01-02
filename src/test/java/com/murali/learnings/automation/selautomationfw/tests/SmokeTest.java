@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 import com.murali.learnings.automation.selautomationfw.utils.BaseTest;
 
 public class SmokeTest extends BaseTest {
-
+	//Page Object
 	@FindBy(name = "search")
 	private WebElement _txtSearch;
 
