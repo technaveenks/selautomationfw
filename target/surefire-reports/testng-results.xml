@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="4" total="7" passed="2" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-12-23T20:44:04 IST" name="Surefire suite" finished-at="2022-12-23T20:44:06 IST" duration-ms="2227">
+    <groups>
+      <group name="search">
+        <method signature="PageObjectTest.verifySearchOfItems()[pri:0, instance:com.murali.learnings.automation.selautomationfw.tests.PageObjectTest@30b7c004]" name="verifySearchOfItems" class="com.murali.learnings.automation.selautomationfw.tests.PageObjectTest"/>
+      </group> <!-- search -->
+      <group name="electronics">
+        <method signature="PageObjectTest.validateElectronicsPage()[pri:0, instance:com.murali.learnings.automation.selautomationfw.tests.PageObjectTest@30b7c004]" name="validateElectronicsPage" class="com.murali.learnings.automation.selautomationfw.tests.PageObjectTest"/>
+      </group> <!-- electronics -->
+      <group name="smoke">
+        <method signature="PageObjectTest.verifySearchOfItems()[pri:0, instance:com.murali.learnings.automation.selautomationfw.tests.PageObjectTest@30b7c004]" name="verifySearchOfItems" class="com.murali.learnings.automation.selautomationfw.tests.PageObjectTest"/>
+        <method signature="SmokeTest.verifySearchOfItems()[pri:0, instance:com.murali.learnings.automation.selautomationfw.tests.SmokeTest@124c278f]" name="verifySearchOfItems" class="com.murali.learnings.automation.selautomationfw.tests.SmokeTest"/>
+      </group> <!-- smoke -->
+      <group name="sanity">
+        <method signature="PageObjectTest.verifySearchOfItems()[pri:0, instance:com.murali.learnings.automation.selautomationfw.tests.PageObjectTest@30b7c004]" name="verifySearchOfItems" class="com.murali.learnings.automation.selautomationfw.tests.PageObjectTest"/>
+        <method signature="SmokeTest.verifySearchOfItems()[pri:0, instance:com.murali.learnings.automation.selautomationfw.tests.SmokeTest@124c278f]" name="verifySearchOfItems" class="com.murali.learnings.automation.selautomationfw.tests.SmokeTest"/>
+      </group> <!-- sanity -->
+    </groups>
+    <test started-at="2022-12-23T20:44:04 IST" name="Surefire test" finished-at="2022-12-23T20:44:06 IST" duration-ms="2227">
+      <class name="com.murali.learnings.automation.selautomationfw.tests.SmokeTest">
+        <test-method signature="verifySearchOfItems()[pri:0, instance:com.murali.learnings.automation.selautomationfw.tests.SmokeTest@124c278f]" started-at="2022-12-23T20:44:06 IST" name="verifySearchOfItems" finished-at="2022-12-23T20:44:06 IST" duration-ms="0" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because the return value of "com.murali.learnings.automation.selautomationfw.tests.SmokeTest.getDriver()" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because the return value of "com.murali.learnings.automation.selautomationfw.tests.SmokeTest.getDriver()" is null
+at com.murali.learnings.automation.selautomationfw.tests.SmokeTest.verifySearchOfItems(SmokeTest.java:17)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchOfItems -->
+      </class> <!-- com.murali.learnings.automation.selautomationfw.tests.SmokeTest -->
+      <class name="com.murali.learnings.automation.selautomationfw.tests.PageObjectTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.murali.learnings.automation.selautomationfw.tests.PageObjectTest@30b7c004]" started-at="2022-12-23T20:43:55 IST" name="setup" finished-at="2022-12-23T20:44:04 IST" duration-ms="8784" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="tsetup()[pri:0, instance:com.murali.learnings.automation.selautomationfw.tests.PageObjectTest@30b7c004]" started-at="2022-12-23T20:44:04 IST" name="tsetup" finished-at="2022-12-23T20:44:04 IST" duration-ms="70" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tsetup -->
+        <test-method signature="validateElectronicsPage()[pri:0, instance:com.murali.learnings.automation.selautomationfw.tests.PageObjectTest@30b7c004]" started-at="2022-12-23T20:44:04 IST" name="validateElectronicsPage" finished-at="2022-12-23T20:44:04 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateElectronicsPage -->
+        <test-method signature="verifySearchOfItems()[pri:0, instance:com.murali.learnings.automation.selautomationfw.tests.PageObjectTest@30b7c004]" started-at="2022-12-23T20:44:04 IST" name="verifySearchOfItems" finished-at="2022-12-23T20:44:06 IST" duration-ms="1928" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchOfItems -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.murali.learnings.automation.selautomationfw.tests.PageObjectTest@30b7c004]" started-at="2022-12-23T20:44:06 IST" name="teardown" finished-at="2022-12-23T20:44:07 IST" duration-ms="486" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.murali.learnings.automation.selautomationfw.tests.PageObjectTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
