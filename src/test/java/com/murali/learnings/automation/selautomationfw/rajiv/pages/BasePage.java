@@ -13,7 +13,9 @@ public class BasePage {
 	}
 
 	public WebDriver getDriver() {
+		System.out.println("driver is loaded");
 		return driver;
+		
 	}
 
 }
