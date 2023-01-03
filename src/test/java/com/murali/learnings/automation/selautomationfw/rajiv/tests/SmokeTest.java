@@ -17,6 +17,16 @@ public class SmokeTest extends BaseTest {
 		getDriver().findElement(By.name("search")).clear();
 		getDriver().findElement(By.name("search")).sendKeys("iPhone");
 		getDriver().findElement(By.xpath("//*[@id=\"search\"]/span/button")).click();
+		
+
+	}
+	
+	@Test(groups = { "smoke", "sanity" })
+	public void verifyNewlyAddedItems() {
+		getDriver().findElement(By.name("search")).clear();
+		getDriver().findElement(By.name("search")).sendKeys("iPhone");
+		getDriver().findElement(By.xpath("//*[@id=\"search\"]/span/button")).click();
+		
 
 	}
 
