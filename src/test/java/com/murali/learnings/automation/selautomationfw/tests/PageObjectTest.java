@@ -34,7 +34,10 @@ public class PageObjectTest extends BaseTest {
 		System.out.println("Electronics");
 	}
 
-
+	@Test(groups = { "electronics" })
+	public void validateUpdatedElectronicsPage() {
+		System.out.println("Electronics");
+	}
 	@BeforeClass
 	public void tsetup() {
 		homePage = new HomePage(getDriver());
