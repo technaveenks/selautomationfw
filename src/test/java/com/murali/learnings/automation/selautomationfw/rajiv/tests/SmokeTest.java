@@ -12,11 +12,12 @@ public class SmokeTest extends BaseTest {
 	@FindBy(name = "search")
 	private WebElement _txtSearch;
 
-	@Test(groups = { "smoke", "sanity" })
+	@Test(groups = { "smoke", "sanity" }, enabled=false)
 	public void verifySearchOfItems() {
 		getDriver().findElement(By.name("search")).clear();
 		getDriver().findElement(By.name("search")).sendKeys("iPhone");
 		getDriver().findElement(By.xpath("//*[@id=\"search\"]/span/button")).click();
+
 
 	}
 

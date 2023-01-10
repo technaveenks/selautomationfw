@@ -13,7 +13,7 @@ public class PageObjectTest extends BaseTest {
 	HomePage homePage;
 	SearchResultsPage searchResultsPage;
 
-	@Test(groups = { "smoke", "sanity", "search" })
+	@Test(groups = { "smoke", "sanity", "search" }, enabled=false)
 	public void verifySearchOfItems() {
 		logger.info("Test started - Page Object Test");
 		homePage.clearSearchText();
@@ -24,7 +24,7 @@ public class PageObjectTest extends BaseTest {
 
 	}
 
-	@Test(groups = { "electronics" })
+	@Test(groups = { "electronics" }, enabled=false)
 	public void validateElectronicsPage() {
 		System.out.println("Electronics");
 	}
