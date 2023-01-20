@@ -17,11 +17,7 @@ public class BaseTest {
 
 	@BeforeSuite
 	public void setup() {
-		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver();
-		driver.get("http://www.tutorialsninja.com/demo/");
-		// Maximize Screen
-		driver.manage().window().maximize();
+		driver = WebDriverHelper.createDriver();
 	}
 
 	@AfterSuite
