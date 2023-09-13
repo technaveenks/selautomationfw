@@ -11,7 +11,7 @@ public class HomePage extends BasePage {
 		super(driver);
 	}
 
-	// Locators
+	  // Locators
 	@FindBy(name = "search")
 	private WebElement _txtSearch;
 
